@@ -15,6 +15,10 @@ export const columnsDataCheck = [
     Header: "DATE",
     accessor: "date",
   },
+  {
+    Header: "FINAL DATE",
+    accessor: "final",
+  },
 ];
 export const columnsDataComplex = [
   {

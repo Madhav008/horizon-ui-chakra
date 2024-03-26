@@ -131,6 +131,12 @@ export default function CheckTable(props) {
                         {cell.value}
                       </Text>
                     );
+                  } else if (cell.column.Header === "FINAL DATE") {
+                    data = (
+                      <Text color={textColor} fontSize='sm' fontWeight='700'>
+                        {cell.value}
+                      </Text>
+                    );
                   }
                   return (
                     <Td
