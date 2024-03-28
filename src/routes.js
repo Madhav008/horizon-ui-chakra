@@ -10,6 +10,7 @@ import {
 // Admin Imports
 import MainDashboard from "views/admin/default";
 import DataTables from "views/admin/dataTables";
+import Matches from "views/admin/matches";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
@@ -22,7 +23,13 @@ const routes = [
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: MainDashboard,
   },
-
+  {
+    name: "Live Matches",
+    layout: "/admin",
+    path: "/matches",
+    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+    component: Matches,
+  },
   {
     name: "Data Tables",
     layout: "/admin",
